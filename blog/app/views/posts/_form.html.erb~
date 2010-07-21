@@ -1,0 +1,33 @@
+<% form_for(@post) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </p>
+<h2>Tags</h2>
+<% post_form.fields_for :tags do |tag_form| %>
+  <p>
+    <%= tag_form.label :name, 'Tag:' %>
+    <%= tag_form.text_field :name %>
+  </p>
+  <$ unless tag_form.object.nil? || tag_form.object.new_record? %>
+    <p>
+      <%= tag_form.label :_delete, 'Remove:' %>
+      <%= tag_form.check_box :_delete %>
+    </p>
+  <% end %>
+<% end %>
+
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+<% end %>
