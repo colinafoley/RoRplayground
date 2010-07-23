@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  uname: MyString
+  password: MyString
+  admin: false
+
+two:
+  uname: MyString
+  password: MyString
+  admin: false
