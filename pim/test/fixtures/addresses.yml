@@ -1,17 +1,23 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
+  address_name: MyString
   street_number: 1
-  street: MyString
-  number: MyString
+  street_name: MyString
+  apt_name: MyString
   city: MyString
   state: MyString
+  zip: MyString
   country: MyString
+  contact: 
 
 two:
+  address_name: MyString
   street_number: 1
-  street: MyString
-  number: MyString
+  street_name: MyString
+  apt_name: MyString
   city: MyString
   state: MyString
+  zip: MyString
   country: MyString
+  contact: 
