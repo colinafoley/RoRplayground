@@ -1,0 +1,20 @@
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-22 13:27:35) [GET]
+Rendering home/index
+Completed in 89ms (View: 87, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-22 13:30:00) [GET]
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-22 14:21:59) [GET]
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-22 14:22:02) [GET]
+Rendering home/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
