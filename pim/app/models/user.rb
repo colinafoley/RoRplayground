@@ -4,4 +4,6 @@ class User < ActiveRecord::Base
   validates_length_of :password, :minimum => 5
 
   has_many :contacts
+  has_many :tasks
+
 end
