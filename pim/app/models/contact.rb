@@ -4,6 +4,6 @@ class Contact < ActiveRecord::Base
   validates_length_of :c_fname, :minimum => 3
 
   has_many :phones
-  has_many :addresses
+  has_many :contact_addresses
   has_many :emails
 end

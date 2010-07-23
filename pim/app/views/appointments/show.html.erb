@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @appointment.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @appointment.description %>
+</p>
+
+<p>
+  <b>Start:</b>
+  <%=h @appointment.start %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%=h @appointment.end %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @appointment.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_appointment_path(@appointment) %> |
+<%= link_to 'Back', appointments_path %>
