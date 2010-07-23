@@ -229,3 +229,31 @@ Migrating to CreateAddresses (20100723161417)
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("contacts")[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("phones")[0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100723020942)
+Migrating to CreateContacts (20100723022659)
+Migrating to CreatePhones (20100723025227)
+Migrating to AddContactIdToPhones (20100723160900)
+Migrating to CreateAddresses (20100723161417)
+Migrating to CreateEmails (20100723161843)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "emails" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" varchar(255), "contact_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100723161843')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("addresses")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("contacts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("emails")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("phones")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
