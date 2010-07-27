@@ -6,6 +6,6 @@ class User < ActiveRecord::Base
   has_many :contacts
   has_many :tasks
 
-  devise :database_authenticatable, :confirmable, :recoverable, :rememberable, :trackable, :validatable
+ # devise :database_authenticatable, :confirmable, :recoverable, :rememberable, :trackable, :validatable
 
 end
