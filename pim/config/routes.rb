@@ -1,11 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
+  map.devise_for :users, :path_names => { :sign_in => 'login', :sign_out => 'logout'}
+
   map.resources :appointments
 
   map.resources :tasks
 
   map.resources :contacts
 
-  map.resources :users
+  #map.resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
 
