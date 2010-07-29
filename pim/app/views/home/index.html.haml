@@ -1,14 +1,23 @@
 - title "Dashboard"
+- sidebar_msg "Welcome to tmi.  Check out the menu up top.  The search and quick add features are not implemented yet, so check back soon!"
 
 = render :partial => "shared/logo"
 = render :partial => "shared/menu"
 
 #page
+  = render :partial => "shared/sidebar"
+  
+  #content
+    %h2 Welcome, #{current_user.email}
+    %p Welcome to your very own personal information management system.  Up above, you will find the links to navigate through tmi.
+    %p Take note that all actions will show up on the left hand side menu during use.
+    %p Enjoy!
+    %p
+      %em The Management
+      
+      %h3 Today's Remaining Tasks
+      %table
 
-%h1 Newb Sauce
-= link_to "Login", new_user_session_path
-%br
-= link_to "Contacts", contacts_path
-%br
-
+      %h3 Today's Remaining Appointments
+      %table
     

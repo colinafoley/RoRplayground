@@ -7,4 +7,8 @@ module ApplicationHelper
   def stylesheet(stylesheet)
     content_for(:stylesheet) { stylesheet }
   end
+
+  def sidebar_msg(sidebar_msg)
+    content_for(:sidebar_msg) { "<p>" + sidebar_msg +"</p>" }
+  end
 end
