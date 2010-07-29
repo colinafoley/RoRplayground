@@ -4,4 +4,7 @@ module ApplicationHelper
     content_for(:title) { page_title }
   end
 
+  def stylesheet(stylesheet)
+    content_for(:stylesheet) { stylesheet }
+  end
 end

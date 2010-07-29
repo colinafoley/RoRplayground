@@ -3411,3 +3411,1450 @@ Rendering template within layouts/application
 Rendering sessions/new
 Rendered shared/_devise_links (0.6ms)
 Completed in 32ms (View: 17, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 09:39:32) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (undefined method `stylesheet' for #<ActionView::Base:0x7f971a388b88>) on line #2 of app/views/sessions/new.html.haml:
+1: - title "Login"
+2: - stylesheet "forms"
+3: 
+4: - form_for resource_name, resource, :url => session_path(resource_name) do |f|
+5:   %fieldset
+
+    app/views/sessions/new.html.haml:2:in `_run_haml_app47views47sessions47new46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 09:39:34) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (undefined method `stylesheet' for #<ActionView::Base:0x7f971a3aefb8>) on line #2 of app/views/sessions/new.html.haml:
+1: - title "Login"
+2: - stylesheet "forms"
+3: 
+4: - form_for resource_name, resource, :url => session_path(resource_name) do |f|
+5:   %fieldset
+
+    app/views/sessions/new.html.haml:2:in `_run_haml_app47views47sessions47new46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (148.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 09:43:06) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (11.1ms)
+
+ActionView::TemplateError (undefined method `stylesheet_ling_tag' for #<ActionView::Base:0x7f971a56c918>) on line #7 of app/views/layouts/application.html.haml:
+4:     %meta(http-equiv="content-type" content="text/html;charset=UTF-8")
+5:       %title PIM - #{yield(:title) || "Too Much Information"}
+6:     = stylesheet_link_tag 'application'
+7:     = stylesheet_ling_tag yield(:stylesheet)
+8: 
+9:   %body
+10: 
+
+    app/views/layouts/application.html.haml:7:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (146.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 09:43:06) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+
+ActionView::TemplateError (undefined method `stylesheet_ling_tag' for #<ActionView::Base:0x7f971a6728f8>) on line #7 of app/views/layouts/application.html.haml:
+4:     %meta(http-equiv="content-type" content="text/html;charset=UTF-8")
+5:       %title PIM - #{yield(:title) || "Too Much Information"}
+6:     = stylesheet_link_tag 'application'
+7:     = stylesheet_ling_tag yield(:stylesheet)
+8: 
+9:   %body
+10: 
+
+    app/views/layouts/application.html.haml:7:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 09:43:17) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+Completed in 30ms (View: 16, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 09:45:09) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+Completed in 28ms (View: 15, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 09:59:15) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+Completed in 236ms (View: 16, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing HomeController#index (for 10.0.0.2 at 2010-07-29 10:09:53) [GET]
+
+
+Processing SessionsController#new (for 10.0.0.2 at 2010-07-29 10:09:59) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://10.0.0.3/users/login?unauthenticated=true]
+
+
+Processing SessionsController#create (for 10.0.0.2 at 2010-07-29 10:10:56) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"5meuihe6VbtYRG8WDlotvpo5AR+KgkysUF3JPBgxkGw=", "user"=>{"remember_me"=>"0", "password"=>"cheese", "email"=>"colin.a.foley@gmail.com"}}
+  [4;36;1mUser Load (13.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'colin.a.foley@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (18.9ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-07-29 14:10:56', "sign_in_count" = 3, "current_sign_in_at" = '2010-07-29 14:10:56', "current_sign_in_ip" = '10.0.0.2', "last_sign_in_at" = '2010-07-28 20:30:13' WHERE "id" = 1[0m
+Redirected to http://10.0.0.3:3000/
+Completed in 250ms (DB: 32) | 302 Found [http://10.0.0.3/users/login]
+
+
+Processing HomeController#index (for 10.0.0.2 at 2010-07-29 10:11:02) [GET]
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (can't convert nil into String) on line #6 of app/views/layouts/application.html.haml:
+3:   %head
+4:     %meta(http-equiv="content-type" content="text/html;charset=UTF-8")
+5:       %title PIM - #{yield(:title) || "Too Much Information"}
+6:     = stylesheet_link_tag yield(:stylesheet)
+7: 
+8:   %body
+9: 
+
+    app/views/layouts/application.html.haml:6:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-29 10:11:25) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"pNq1JAFZ6zhwghUq543PpJERzF2AJ/mBkcZrVJUDBwQ=", "user"=>{"remember_me"=>"0", "password"=>"cheese", "email"=>"colin.a.foley@gmail.com"}}
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'colin.a.foley@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-29 14:11:25', "sign_in_count" = 4, "current_sign_in_at" = '2010-07-29 14:11:25', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-29 14:10:56', "last_sign_in_ip" = '10.0.0.2' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/
+Completed in 120ms (DB: 1) | 302 Found [http://localhost/users/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 10:11:25) [GET]
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (can't convert nil into String) on line #6 of app/views/layouts/application.html.haml:
+3:   %head
+4:     %meta(http-equiv="content-type" content="text/html;charset=UTF-8")
+5:       %title PIM - #{yield(:title) || "Too Much Information"}
+6:     = stylesheet_link_tag yield(:stylesheet)
+7: 
+8:   %body
+9: 
+
+    app/views/layouts/application.html.haml:6:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 10:12:56) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 131ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-29 10:12:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/....css" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 10:13:13) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 10.0.0.2 at 2010-07-29 10:13:33) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://10.0.0.3/]
+
+
+Processing SessionsController#new (for 10.0.0.2 at 2010-07-29 10:14:19) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://10.0.0.3:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 10ms (DB: 1) | 302 Found [http://10.0.0.3/users/login]
+
+
+Processing HomeController#index (for 10.0.0.2 at 2010-07-29 10:14:24) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://10.0.0.3/]
+
+
+Processing SessionsController#new (for 10.0.0.2 at 2010-07-29 10:14:45) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://10.0.0.3:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 9ms (DB: 1) | 302 Found [http://10.0.0.3/users/login]
+
+
+Processing HomeController#index (for 10.0.0.2 at 2010-07-29 10:15:00) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://10.0.0.3/]
+
+
+Processing SessionsController#new (for 10.0.0.2 at 2010-07-29 10:15:00) [GET]
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://10.0.0.3:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 10ms (DB: 1) | 302 Found [http://10.0.0.3/users/login]
+
+
+Processing HomeController#index (for 10.0.0.2 at 2010-07-29 10:15:16) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://10.0.0.3/]
+
+
+Processing SessionsController#destroy (for 10.0.0.2 at 2010-07-29 10:15:16) [GET]
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Redirected to http://10.0.0.3:3000/
+Completed in 20ms (DB: 2) | 302 Found [http://10.0.0.3/users/logout]
+
+
+Processing HomeController#index (for 10.0.0.2 at 2010-07-29 10:15:22) [GET]
+
+
+Processing SessionsController#new (for 10.0.0.2 at 2010-07-29 10:15:27) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 25ms (View: 13, DB: 0) | 200 OK [http://10.0.0.3/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 10.0.0.2 at 2010-07-29 10:17:41) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 30ms (View: 16, DB: 0) | 200 OK [http://10.0.0.3/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 10.0.0.2 at 2010-07-29 10:17:58) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+Completed in 30ms (View: 17, DB: 0) | 200 OK [http://10.0.0.3/users/login?unauthenticated=true]
+
+
+Processing RegistrationsController#new (for 10.0.0.2 at 2010-07-29 10:20:40) [GET]
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 54ms (View: 43, DB: 0) | 200 OK [http://10.0.0.3/users/sign_up]
+
+
+Processing PasswordsController#new (for 10.0.0.2 at 2010-07-29 10:21:45) [GET]
+Rendering template within layouts/application
+Rendering passwords/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 33ms (View: 23, DB: 0) | 200 OK [http://10.0.0.3/users/password/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 15:43:48) [GET]
+  [4;35;1mUser Load (20.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 79ms (View: 8, DB: 21) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 15:44:08) [GET]
+  [4;36;1mUser Load (1.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 7, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 15:44:58) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:11:22) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (Illegal element: classes and ids must have values.) on line #5 of app/views/shared/_logo.html.haml:
+2:   %h4
+3:     Welcome,
+4:     = current_user.email
+5:     .
+
+    app/views/shared/_logo.html.haml:5
+    haml (3.0.13) lib/haml/precompiler.rb:706:in `render_tag'
+    haml (3.0.13) lib/haml/precompiler.rb:837:in `render_div'
+    haml (3.0.13) lib/haml/precompiler.rb:210:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.13) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/home/index.html.haml:3:in `_run_haml_app47views47home47index46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:11:48) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (Inconsistent indentation: 3 spaces were used for indentation, but the rest of the document was indented using 2 spaces.) on line #5 of app/views/shared/_logo.html.haml:
+2:   %h4
+3:     Welcome,
+4:     = current_user.email
+5:    \.
+
+    app/views/shared/_logo.html.haml:5
+    haml (3.0.13) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.13) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.13) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.13) lib/haml/precompiler.rb:1040:in `block_opened?'
+    haml (3.0.13) lib/haml/precompiler.rb:388:in `push_script'
+    haml (3.0.13) lib/haml/precompiler.rb:224:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.13) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/home/index.html.haml:3:in `_run_haml_app47views47home47index46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:11:54) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (6.3ms)
+Completed in 27ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:20:33) [GET]
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (5.7ms)
+Completed in 26ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:41:48) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (3.6ms)
+Completed in 18ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:41:51) [GET]
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (4.5ms)
+Completed in 122ms (View: 108, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:42:11) [GET]
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+ERROR: compiling _run_haml_app47views47shared47_logo46html46haml_locals_logo_object RAISED compile error
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:5: syntax error, unexpected ')'
+));}\n  </h4>\n  #{_hamlout.adj...
+ ^
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: unknown regexp options - dv
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: syntax error, unexpected $undefined
+));}\n</div>\n", -1, false);_erbout;ensure;...
+             ^
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: unterminated string meets end of file
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_haml_app47views47shared47_logo46html46haml_locals_logo_object(local_assigns)
+            old_output_buffer = output_buffer;logo = local_assigns[:logo];object = local_assigns[:object];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :format=>:xhtml, :ugly=>false, :preserve=>["textarea", "pre", "code"], :escape_html=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<div id='head'>\n  <h4>\n    Welcome,\n    #{
+
+
+_hamlout.adjust_tabs(2); _hamlout.format_script_false_false_false_false_false_true_false(( current_user.email.
+));}\n  </h4>\n  #{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(("Today's date is #{Date.today}."
+));}\n</div>\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable_partial.rb:20:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable_partial.rb:19:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/partials.rb:184:in `render_partial'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:267:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:11:in `render'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/lib/haml/helpers.rb:90:in `non_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:11:in `render'
+/home/obsidian/rls/pim/app/views/home/index.html.haml:3:in `_run_haml_app47views47home47index46html46haml'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:34:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:34:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:306:in `with_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:30:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:35:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:5: syntax error, unexpected ')'
+));}\n  </h4>\n  #{_hamlout.adj...
+ ^
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: unknown regexp options - dv
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: syntax error, unexpected $undefined
+));}\n</div>\n", -1, false);_erbout;ensure;...
+             ^
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: unterminated string meets end of file
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: syntax error, unexpected $end, expecting ')') on line #5 of app/views/shared/_logo.html.haml:
+2:   %h4
+3:     Welcome,
+4:     = current_user.email.
+5:   Today's date is #{Date.today}.
+
+    app/views/shared/_logo.html.haml:6:in `compile!'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.13) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/home/index.html.haml:3:in `_run_haml_app47views47home47index46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:42:16) [GET]
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+ERROR: compiling _run_haml_app47views47shared47_logo46html46haml_locals_logo_object RAISED compile error
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:5: syntax error, unexpected ')'
+));}\n  </h4>\n  #{_hamlout.adj...
+ ^
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: unknown regexp options - dv
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: syntax error, unexpected $undefined
+));}\n</div>\n", -1, false);_erbout;ensure;...
+             ^
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: unterminated string meets end of file
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_haml_app47views47shared47_logo46html46haml_locals_logo_object(local_assigns)
+            old_output_buffer = output_buffer;logo = local_assigns[:logo];object = local_assigns[:object];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :format=>:xhtml, :ugly=>false, :preserve=>["textarea", "pre", "code"], :escape_html=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<div id='head'>\n  <h4>\n    Welcome,\n    #{
+
+
+_hamlout.adjust_tabs(2); _hamlout.format_script_false_false_false_false_false_true_false(( current_user.email .
+));}\n  </h4>\n  #{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(("Today's date is #{Date.today}."
+));}\n</div>\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable_partial.rb:20:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable_partial.rb:19:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/partials.rb:184:in `render_partial'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:267:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:11:in `render'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/lib/haml/helpers.rb:90:in `non_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:11:in `render'
+/home/obsidian/rls/pim/app/views/home/index.html.haml:3:in `_run_haml_app47views47home47index46html46haml'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:34:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:34:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:306:in `with_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:30:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:35:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:5: syntax error, unexpected ')'
+));}\n  </h4>\n  #{_hamlout.adj...
+ ^
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: unknown regexp options - dv
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: syntax error, unexpected $undefined
+));}\n</div>\n", -1, false);_erbout;ensure;...
+             ^
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: unterminated string meets end of file
+/home/obsidian/rls/pim/app/views/shared/_logo.html.haml:6: syntax error, unexpected $end, expecting ')') on line #5 of app/views/shared/_logo.html.haml:
+2:   %h4
+3:     Welcome,
+4:     = current_user.email .
+5:   Today's date is #{Date.today}.
+
+    app/views/shared/_logo.html.haml:6:in `compile!'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.13) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/home/index.html.haml:3:in `_run_haml_app47views47home47index46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:42:26) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (109.6ms)
+Completed in 129ms (View: 115, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 16:42:58) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/users/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:42:58) [GET]
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (3.8ms)
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-29 16:43:03) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Redirected to http://localhost:3000/
+Completed in 180ms (DB: 1) | 302 Found [http://localhost/users/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:43:03) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 16:43:03) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 24ms (View: 13, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 16:46:33) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+ERROR: compiling _run_haml_app47views47sessions47new46html46haml RAISED compile error
+/home/obsidian/rls/pim/app/views/sessions/new.html.haml:9: unknown regexp option - h
+/home/obsidian/rls/pim/app/views/sessions/new.html.haml:9: unmatched ): /strong>. Please enter your credentials.
+));}\n  </
+/home/obsidian/rls/pim/app/views/sessions/new.html.haml:9: syntax error, unexpected tINTEGER, expecting ')'
+));}\n  </h6>\n  <div class='inputGroup'>\n    #{
+            ^
+/home/obsidian/rls/pim/app/views/sessions/new.html.haml:9: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}\n  </h6>\n  <div class='inputGroup'>\n    #{
+                           ^
+/home/obsidian/rls/pim/app/views/sessions/new.html.haml:9: syntax error, unexpected $undefined
+));}\n  </h6>\n  <div class='inputGroup'>\n    #{
+                                          ^
+/home/obsidian/rls/pim/app/views/sessions/new.html.haml:11: syntax error, unexpected '}', expecting ')'
+));}\n    #{_hamlout.format_script...
+    ^
+Function body:           def _run_haml_app47views47sessions47new46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :format=>:xhtml, :ugly=>false, :preserve=>["textarea", "pre", "code"], :escape_html=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;; title "Login";
+ stylesheet "forms";
+_hamlout.push_text("", 0, false);
+ form_for resource_name, resource, :url => session_path(resource_name) do |f|;
+_hamlout.push_text("<fieldset>\n  <legend>Login</legend>\n  <h6>\n    #{
+
+
+_hamlout.adjust_tabs(2); _hamlout.format_script_false_false_false_false_false_true_false((Welcome to <strong>tmi</strong>. Please enter your credentials.
+));}\n  </h6>\n  <div class='inputGroup'>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :email
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :email
+));}\n  </div>\n  <div class='inputGroup'>\n    #{
+
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :password
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.password_field :password
+));}\n  </div>\n", -1, false);
+ if devise_mapping.rememberable?;
+_hamlout.push_text("  #{_hamlout.format_script_false_false_false_false_false_true_false(( f.check_box :remember_me
+));}\n  #{_hamlout.format_script_false_false_false_false_false_true_false(( f.label :remember_me
+));}\n", 0, false);
+end;_hamlout.push_text("  <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((f.submit "Sign in"
+));}</p>\n</fieldset>\n", -1, false);
+end;_hamlout.push_text("#{_hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/devise_links"
+));}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/obsidian/rls/pim/app/views/sessions/new.html.haml:27:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/obsidian/.gem/ruby/1.8/gems/devise-1.0.8/lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+/home/obsidian/.gem/ruby/1.8/gems/devise-1.0.8/app/controllers/sessions_controller.rb:14:in `new'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:35:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/obsidian/rls/pim/app/views/sessions/new.html.haml:9: unknown regexp option - h
+/home/obsidian/rls/pim/app/views/sessions/new.html.haml:9: unmatched ): /strong>. Please enter your credentials.
+));}\n  </
+/home/obsidian/rls/pim/app/views/sessions/new.html.haml:9: syntax error, unexpected tINTEGER, expecting ')'
+));}\n  </h6>\n  <div class='inputGroup'>\n    #{
+            ^
+/home/obsidian/rls/pim/app/views/sessions/new.html.haml:9: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}\n  </h6>\n  <div class='inputGroup'>\n    #{
+                           ^
+/home/obsidian/rls/pim/app/views/sessions/new.html.haml:9: syntax error, unexpected $undefined
+));}\n  </h6>\n  <div class='inputGroup'>\n    #{
+                                          ^
+/home/obsidian/rls/pim/app/views/sessions/new.html.haml:11: syntax error, unexpected '}', expecting ')'
+));}\n    #{_hamlout.format_script...
+    ^) on line #9 of app/views/sessions/new.html.haml:
+6:     %legend Login
+7:     %h6
+8:       != Welcome to <strong>tmi</strong>. Please enter your credentials.
+9:     .inputGroup
+10:       = f.label :email
+11:       = f.text_field :email
+12: 
+
+    app/views/sessions/new.html.haml:27:in `compile!'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (144.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 16:49:04) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+Completed in 39ms (View: 21, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-29 16:49:45) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"pNq1JAFZ6zhwghUq543PpJERzF2AJ/mBkcZrVJUDBwQ=", "user"=>{"remember_me"=>"0", "password"=>"cheese", "email"=>"colin.a.foley@gmail.com"}}
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'colin.a.foley@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (8.0ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-29 20:49:45', "sign_in_count" = 5, "current_sign_in_at" = '2010-07-29 20:49:45', "last_sign_in_at" = '2010-07-29 14:11:25', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/
+Completed in 33ms (DB: 9) | 302 Found [http://localhost/users/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:49:45) [GET]
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (4.8ms)
+Completed in 137ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 16:50:55) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (4.2ms)
+Completed in 25ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:01:02) [GET]
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (4.6ms)
+Completed in 25ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:03:40) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (5.4ms)
+Completed in 27ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:04:33) [GET]
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (5.6ms)
+Completed in 26ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:05:28) [GET]
+  [4;36;1mUser Load (3.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (131.0ms)
+Completed in 166ms (View: 139, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:06:03) [GET]
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (5.5ms)
+Completed in 26ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:14:32) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (5.3ms)
+Completed in 25ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:22:43) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (4.9ms)
+Rendered shared/_menu (2.2ms)
+Completed in 34ms (View: 20, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:22:48) [GET]
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (3.2ms)
+Rendered shared/_menu (0.4ms)
+Completed in 21ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:24:20) [GET]
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (4.6ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (15.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined local variable or method `homes_path' for #<ActionView::Base:0x7f971a4bb7a8>) on line #3 of app/views/shared/_menu.html.haml:
+1: #menu
+2:   %ul
+3:     %li #{link_to "Dashboord", homes_path }
+4:       
+
+    app/views/shared/_menu.html.haml:3:in `_run_haml_app47views47shared47_menu46html46haml_locals_menu_object'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.13) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/home/index.html.haml:4:in `_run_haml_app47views47home47index46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:24:28) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (3.0ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (18.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined local variable or method `home_path' for #<ActionView::Base:0x7f971a32c680>) on line #3 of app/views/shared/_menu.html.haml:
+1: #menu
+2:   %ul
+3:     %li #{link_to "Dashboord", home_path }
+4:       
+
+    app/views/shared/_menu.html.haml:3:in `_run_haml_app47views47shared47_menu46html46haml_locals_menu_object'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.13) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/home/index.html.haml:4:in `_run_haml_app47views47home47index46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:25:34) [GET]
+  [4;35;1mUser Load (1.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (4.8ms)
+Rendered shared/_menu (1.6ms)
+Completed in 28ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:27:50) [GET]
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (5.5ms)
+Rendered shared/_menu (5.7ms)
+Completed in 33ms (View: 19, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:28:18) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (2.9ms)
+Rendered shared/_menu (4.2ms)
+Completed in 28ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:28:19) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (4.0ms)
+Rendered shared/_menu (2.2ms)
+Completed in 24ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-29 17:28:21) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Redirected to http://localhost:3000/
+Completed in 46ms (DB: 2) | 302 Found [http://localhost/users/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:28:21) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 17:28:21) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.7ms)
+Completed in 28ms (View: 16, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-29 17:28:47) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"pNq1JAFZ6zhwghUq543PpJERzF2AJ/mBkcZrVJUDBwQ=", "user"=>{"remember_me"=>"0", "password"=>"cheese", "email"=>"colin.a.foley@gmail.com"}}
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'colin.a.foley@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-07-29 21:28:47', "sign_in_count" = 6, "current_sign_in_at" = '2010-07-29 21:28:47', "last_sign_in_at" = '2010-07-29 20:49:45' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/
+Completed in 118ms (DB: 1) | 302 Found [http://localhost/users/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:28:47) [GET]
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (3.1ms)
+Rendered shared/_menu (0.8ms)
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 17:29:42) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_logo (4.7ms)
+Rendered shared/_menu (0.8ms)
+Completed in 29ms (View: 14, DB: 1) | 200 OK [http://localhost/]

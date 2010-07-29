@@ -1,11 +1,14 @@
-%html
-  %head
-    %title PIM - Login
-  %body
-    %h1 Newb Sauce
-    = link_to "Login", new_user_session_path
-    %br
-    = link_to "Contacts", contacts_path
-    %br
+- title "Dashboard"
+
+= render :partial => "shared/logo"
+= render :partial => "shared/menu"
+
+#page
+
+%h1 Newb Sauce
+= link_to "Login", new_user_session_path
+%br
+= link_to "Contacts", contacts_path
+%br
 
     

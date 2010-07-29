@@ -3,7 +3,7 @@
   %head
     %meta(http-equiv="content-type" content="text/html;charset=UTF-8")
       %title PIM - #{yield(:title) || "Too Much Information"}
-    = stylesheet_link_tag 'scaffold'
+    = stylesheet_link_tag(yield(:stylesheet) || "application")
 
   %body
 

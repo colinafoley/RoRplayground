@@ -1,0 +1,6 @@
+#head
+  %h4
+    Welcome, #{ current_user.email + "." }
+  %h5 Today is #{Date.today.to_formatted_s(:long_ordinal)}.
+/  %h5 You have #{current_user.___} task(s) and #{current_user.___} appointment(s) total.
+
