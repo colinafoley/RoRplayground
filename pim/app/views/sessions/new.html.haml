@@ -1,0 +1,25 @@
+- title "Login"
+- stylesheet "forms"
+
+- form_for resource_name, resource, :url => session_path(resource_name) do |f|
+  %fieldset
+    %legend Login
+    %h6
+      Welcome to
+      %strong tmi
+      \.  Please enter your credentials.
+    .inputGroup
+      %p= f.label :email
+      %p= f.text_field :email
+
+    .inputGroup
+      %p= f.label :password
+      %p= f.password_field :password
+
+    - if devise_mapping.rememberable?
+      %p= f.check_box :remember_me
+      %p= f.label :remember_me
+
+    %p= f.submit "Sign in"
+
+= render :partial => "shared/devise_links"

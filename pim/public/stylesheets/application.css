@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:Helvetica, sans-serif;
+    font-size:11pt;
+    background:#fafcf1 url(../images/background.jpg) no-repeat;
+}
+
+#head{
+    background:#a3b577 url(../images/logo.jpg) 5% 50% no-repeat;
+    height:80px;
+    width:40%;
+    margin:10px 0;
+    float:right;
+    color:#fff;
+    text-align:right;
+    font-size:10pt;
+}
+
+#head h4{
+    font-weight:normal;
+    margin:10px 20px;
+}
+#head h5{
+    font-weight:normal;
+    margin:0 20px;
+}
+
+#head h6{
+    font-weight:normal;
+    margin:0 20px;
+}
+
+#menu{
+    margin:30px auto 0;
+    width:100%;
+    float:left;
+    
+}
+#menu ul{
+    list-style-type:none;
+    margin-left:40px;
+}
+
+#menu li{
+    display:inline;
+    
+}
+
+#menu a{
+    background:#9fb6bf;
+    padding:15px 40px;
+    margin:0 1px;
+    float:left;
+    display:block;
+    text-decoration:none;
+    color:#dfe4e6;
+    font-size:.8em;
+    font-weight:bold;
+}
+
+#menu a:hover{
+    background:#96abb4;
+}
+#menu #active{
+    background:#809eae;
+    color:#fff;
+}
+
+#page{
+    float:left;
+    width:100%;	
+    border-top:10px solid #809eae;
+    padding:10px 0;
+}
+
+#page #sidebar{
+    float:left;
+    padding:2em 0;
+    background:#a3b577;
+    width:25%;
+    text-align:center;
+}
+
+#sidebar input{
+    width:75%;
+    background:#fff;
+    border:1px solid #ccc;
+    padding:.5em;
+}
+
+#sidebar ul{
+    list-style-type:none;
+    width:75%;
+    text-align:right;
+    margin:1em auto;
+}
+
+#sidebar li a{
+    font-size:.9em;
+    color:#fff;
+    text-decoration:none;
+    font-size:.8em;
+    border-right:1px solid #bac89a;
+    display:block;
+    padding:1em;
+}
+
+#sidebar li a:hover{
+    background:#bac89a;
+}
+
+#sidebar p{
+    margin:1em auto;
+    width:70%;
+    text-align:right;
+    color:#fff;
+    font-size:.75em;
+}
+
+#page #content{
+    float:left;
+    margin:0 1em;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    width:60%;
+    padding:1em;
+}
+
+#content h2{
+    text-align:right;
+    color:#aaa;
+}
+#content p{
+    margin:1em;
+}
+#content p a{
+    text-decoration:none;
+    color:#a3b577;
+    font-weight:bold;
+    font-size:.8em;
+}
+#timeline{
+    width:100%;
+    background:#809eae;
+    height:100px;
+    float:left;
+}
+
+.listable{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid #809eae;
+    margin:1em;
+}
+
+.listable td,th{
+    text-align:left;
+    width:33%;
+}
+.listable td{
+    color:#666;
+    padding:0 1em;
+}
+.listable th{
+    background:#809eae;
+    color:#fff;
+    padding:.5em 1em;
+}
+.listable tr{
+    background:#f0f0f0f0;
+    font-size:.8em;
+}
+.listable tr.odd{
+    background:#efefef;
+}
+
+.listable a{
+    color:#666;
+    text-decoration:none;
+    display:block;
+    padding:.5em;    
+}
+
+.listable a:hover{
+    color:#000;
+    text-decoration:underline;
+}
+
+.success{
+    width:100%;
+    margin:0 auto;
+    background:#a3b577;
+    color:#fff;
+    padding:.5em;
+    margin:1em;
+    text-align:center;
+    font-weight:bold;
+    font-size:.8em;
+    word-spacing:.25em;
+}
+
+#calendar{
+    border-collapse:collapse;
+    margin-top:2em;
+}
+
+#calendar td {
+    border:1px solid #aaa;
+    background:#fefefe;
+}
+#calendar a{
+    text-decoration:none;
+    padding:35px;
+    display:block;
+    color:#666;
+    cursor:default;
+}
+
+#calendar .inMonth a{
+    background:#efefef;
+}
+#calendar .hasEvents a{
+    overflow:auto;
+    background:#ddd;
+    font-weight:bold;
+    color:#a3b577;
+    cursor:pointer;
+}
+#calendar .hasEvents a:hover{
+    background:#d6d6d6;
+    color:#666;
+}
+#calendar th{
+    font-size:.8em;
+    text-align:center;
+    font-weight:normal;
+    background:#809eae;
+    color:#fff;
+    padding:10px;
+    border:1px solid #809eae;
+}

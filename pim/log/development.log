@@ -2127,3 +2127,1287 @@ Rendering rescues/layout (internal_server_error)
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("emails")[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("phones")[0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tasks")[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 11:35:03) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 11:35:03) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  devise (1.0.8) lib/devise/controllers/internal_helpers.rb:75:in `new'
+  devise (1.0.8) lib/devise/controllers/internal_helpers.rb:75:in `build_resource'
+  devise (1.0.8) app/controllers/sessions_controller.rb:13:in `new'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.5ms)
+Rendered rescues/_request_and_response (3.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 11:45:31) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 11:45:31) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  devise (1.0.8) lib/devise/controllers/internal_helpers.rb:75:in `new'
+  devise (1.0.8) lib/devise/controllers/internal_helpers.rb:75:in `build_resource'
+  devise (1.0.8) app/controllers/sessions_controller.rb:13:in `new'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (54.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateContacts (20100723022659)
+Migrating to CreatePhones (20100723025227)
+Migrating to AddContactIdToPhones (20100723160900)
+Migrating to CreateAddresses (20100723161417)
+Migrating to CreateEmails (20100723161843)
+Migrating to CreateTasks (20100723173146)
+Migrating to CreateAppointments (20100723204328)
+Migrating to DeviseCreateUsers (20100728153018)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (16.4ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "password_salt" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "remember_token" varchar(255), "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (37.9ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100728153018')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("addresses")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("appointments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("contacts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("emails")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("phones")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 12:10:01) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 12:10:01) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (2.1ms)
+Completed in 42ms (View: 26, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-07-28 13:39:28) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+
+ActionView::MissingTemplate (Missing template users/index.erb in view path app/views:/home/obsidian/.gem/ruby/1.8/gems/devise-1.0.8/app/views):
+  app/controllers/users_controller.rb:7:in `index'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 13:39:31) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 13:39:31) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.7ms)
+Completed in 220ms (View: 20, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 13:40:59) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 24ms (View: 9, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 13:41:02) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 13:41:02) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 24ms (View: 9, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 13:41:40) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `new_user_session' for #<ActionView::Base:0x7f70df08e2b8>) on line #6 of app/views/home/index.html.haml:
+3:     %title PIM - Login
+4:   %body
+5:     %h1 Newb Sauce
+6:     = link_to "Login", new_user_session
+7:     %br
+8:     = link_to "Contacts", contacts_path
+9:     %br
+
+    app/views/home/index.html.haml:6:in `_run_haml_app47views47home47index46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 13:42:25) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 23ms (View: 12, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 13:46:04) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `new_user_session' for #<ActionView::Base:0x7f70dee3ae58>) on line #6 of app/views/home/index.html.haml:
+3:     %title PIM - Login
+4:   %body
+5:     %h1 Newb Sauce
+6:     = link_to "Login", new_user_session
+7:     %br
+8:     = link_to "Contacts", contacts_path
+9:     %br
+
+    app/views/home/index.html.haml:6:in `_run_haml_app47views47home47index46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 13:49:19) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 13:49:20) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 24ms (View: 12, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-28 13:49:24) [GET]
+Rendering template within layouts/application
+Rendering registrations/new
+Rendered shared/_devise_links (2.9ms)
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-28 13:49:36) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"pNq1JAFZ6zhwghUq543PpJERzF2AJ/mBkcZrVJUDBwQ=", "user"=>{"password_confirmation"=>"cheese", "password"=>"cheese", "email"=>"colin.a.foley@gmail.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'colin.a.foley@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "remember_created_at", "current_sign_in_at", "email") VALUES('9d1cac82ace1a032ccec4823f438ddc67f5e7c3f', '2010-07-28 17:49:36', NULL, '2010-07-28 17:49:36', NULL, 0, '1wV1m8mTy18E2UvtQ3Db', NULL, NULL, NULL, NULL, NULL, 'colin.a.foley@gmail.com')[0m
+  [4;35;1mUser Update (16.2ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-07-28 17:49:36', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-28 17:49:36', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-28 17:49:36', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/
+Completed in 107ms (DB: 17) | 302 Found [http://localhost/users]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 13:49:36) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 15:21:59) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 23ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-07-28 15:22:03) [GET]
+  [4;36;1mContact Load (0.8ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/contacts
+Rendering contacts/index
+Completed in 122ms (View: 39, DB: 1) | 200 OK [http://localhost/contacts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:10:26) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:11:51) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-28 16:15:51) [GET]
+
+NameError (uninitialized constant UserController):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:15:57) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-07-28 16:16:16) [GET]
+  [4;35;1mUser Load (56.0ms)[0m   [0mSELECT * FROM "users" [0m
+
+ActionView::MissingTemplate (Missing template users/index.erb in view path app/views:/home/obsidian/.gem/ruby/1.8/gems/devise-1.0.8/app/views):
+  app/controllers/users_controller.rb:7:in `index'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-28 16:16:45) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 5ms (DB: 1) | 302 Found [http://localhost/users/sign_up]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:16:47) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:17:14) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:17:16) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:17:19) [GET]
+  [4;35;1mUser Load (3.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 18ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:17:23) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/users/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:17:23) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:17:25) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/users/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:17:25) [GET]
+  [4;35;1mUser Load (3.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 19ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:17:26) [GET]
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/users/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:17:26) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:17:27) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/users/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:17:27) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-28 16:17:31) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Redirected to http://localhost:3000/
+Completed in 220ms (DB: 1) | 302 Found [http://localhost/users/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:17:31) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:17:31) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 39ms (View: 29, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:17:36) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:17:36) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 114ms (View: 101, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:30:05) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.8ms)
+Completed in 48ms (View: 14, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-28 16:30:13) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"pNq1JAFZ6zhwghUq543PpJERzF2AJ/mBkcZrVJUDBwQ=", "user"=>{"remember_me"=>"0", "password"=>"cheese", "email"=>"colin.a.foley@gmail.com"}}
+  [4;36;1mUser Load (2.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'colin.a.foley@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-07-28 20:30:13', "sign_in_count" = 2, "current_sign_in_at" = '2010-07-28 20:30:13' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/
+Completed in 24ms (DB: 3) | 302 Found [http://localhost/users/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:30:13) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:34:18) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/users/login?unauthenticated=true]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:34:18) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:34:20) [GET]
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/users/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:34:20) [GET]
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:34:21) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/users/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:34:21) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-28 16:34:24) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Redirected to http://localhost:3000/
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/users/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-28 16:34:24) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:34:25) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %legend and nested within it.) on line #9 of app/views/sessions/new.html.haml:
+6: %fieldset
+7: %legend Login
+8: 
+9:   <p><%= f.label :email %></p>
+10:   <p><%= f.text_field :email %></p>
+11: 
+12:   <p><%= f.label :password %></p>
+
+    app/views/sessions/new.html.haml:9
+    haml (3.0.13) lib/haml/precompiler.rb:773:in `render_tag'
+    haml (3.0.13) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:34:54) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (Illegal nesting: nesting within plain text is illegal.) on line #16 of app/views/sessions/new.html.haml:
+13:   <p><%= f.password_field :password %></p>
+14: 
+15:   <% if devise_mapping.rememberable? -%>
+16:     <p><%= f.check_box :remember_me %> <%= f.label :remember_me %></p>
+17:   <% end -%>
+18: 
+19:   <p><%= f.submit "Sign in" %></p>
+
+    app/views/sessions/new.html.haml:16
+    haml (3.0.13) lib/haml/precompiler.rb:355:in `push_plain'
+    haml (3.0.13) lib/haml/precompiler.rb:279:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:37:56) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %p and nested within it.) on line #16 of app/views/sessions/new.html.haml:
+13: 
+14:     - if devise_mapping.rememberable?
+15:       %p= f.check_box :remember_me 
+16:         = f.label :remember_me
+17: 
+18:         %p= f.submit "Sign in"
+19: -end
+
+    app/views/sessions/new.html.haml:16
+    haml (3.0.13) lib/haml/precompiler.rb:773:in `render_tag'
+    haml (3.0.13) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (159.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:38:09) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %p and nested within it.) on line #17 of app/views/sessions/new.html.haml:
+14:     - if devise_mapping.rememberable?
+15:       %p= f.check_box :remember_me  = f.label :remember_me
+16: 
+17:         %p= f.submit "Sign in"
+18: -end
+19: 
+20: = render :partial => "shared/devise_links"
+
+    app/views/sessions/new.html.haml:17
+    haml (3.0.13) lib/haml/precompiler.rb:773:in `render_tag'
+    haml (3.0.13) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (144.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:38:36) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %p and nested within it.) on line #17 of app/views/sessions/new.html.haml:
+14:     - if devise_mapping.rememberable?
+15:       %p= f.check_box :remember_me f.label :remember_me
+16: 
+17:         %p= f.submit "Sign in"
+18: -end
+19: 
+20: = render :partial => "shared/devise_links"
+
+    app/views/sessions/new.html.haml:17
+    haml (3.0.13) lib/haml/precompiler.rb:773:in `render_tag'
+    haml (3.0.13) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:38:55) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %p and nested within it.) on line #18 of app/views/sessions/new.html.haml:
+15:       %p= f.check_box :remember_me
+16:       %p= f.label :remember_me
+17: 
+18:         %p= f.submit "Sign in"
+19: -end
+20: 
+21: = render :partial => "shared/devise_links"
+
+    app/views/sessions/new.html.haml:18
+    haml (3.0.13) lib/haml/precompiler.rb:773:in `render_tag'
+    haml (3.0.13) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:39:27) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (You don't need to use "- end" in Haml. Un-indent to close a block:
+- if foo?
+  %strong Foo!
+- else
+  Not foo.
+%p This line is un-indented, so it isn't part of the "if" block) on line #19 of app/views/sessions/new.html.haml:
+16:       %p= f.label :remember_me
+17: 
+18:     %p= f.submit "Sign in"
+19: - end
+20: 
+21: = render :partial => "shared/devise_links"
+
+    app/views/sessions/new.html.haml:19
+    haml (3.0.13) lib/haml/precompiler.rb:229:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:39:47) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x7f70deb349e8>) on line #1 of app/views/sessions/new.html.haml:
+1: =title "Login"
+2: 
+3: %h2 Sign in
+4: 
+
+    app/views/sessions/new.html.haml:1:in `_run_haml_app47views47sessions47new46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.8ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:40:00) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x7f70dece10e8>) on line #1 of app/views/sessions/new.html.haml:
+1: = title "Login"
+2: 
+3: %h2 Sign in
+4: 
+
+    app/views/sessions/new.html.haml:1:in `_run_haml_app47views47sessions47new46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (136.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:50:24) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %title and nested within it.) on line #6 of app/views/layouts/application.html.haml:
+3:   %head
+4:     %meta(http-equiv="content-type" content="text/html;charset=UTF-8")
+5:       %title PIM
+6:         = @page_title
+7:     = stylesheet_link_tag 'scaffold'
+8: 
+9:   %body
+
+    app/views/layouts/application.html.haml:6
+    haml (3.0.13) lib/haml/precompiler.rb:773:in `render_tag'
+    haml (3.0.13) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:50:50) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+Completed in 30ms (View: 15, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:51:12) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::PIM) on line #5 of app/views/layouts/application.html.haml:
+2: %html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+3:   %head
+4:     %meta(http-equiv="content-type" content="text/html;charset=UTF-8")
+5:       %title= PIM -  @page_title
+6:     = stylesheet_link_tag 'scaffold'
+7: 
+8:   %body
+
+    app/views/layouts/application.html.haml:5:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (146.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 16:51:39) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+ERROR: compiling _run_haml_app47views47layouts47application46html46haml RAISED compile error
+/home/obsidian/rls/pim/app/views/layouts/application.html.haml:5: syntax error, unexpected tIVAR, expecting ')'
+Function body:           def _run_haml_app47views47layouts47application46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :format=>:xhtml, :ugly=>false, :preserve=>["textarea", "pre", "code"], :escape_html=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>\n  <head>\n    <meta content='text/html;charset=UTF-8' http-equiv='content-type'>\n      <title>#{
+
+
+
+_hamlout.adjust_tabs(4); _hamlout.format_script_false_true_false_false_false_true_false(("PIM -"  @page_title
+));}</title>\n    </meta>\n    #{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( stylesheet_link_tag 'scaffold'
+));}\n  </head>\n  <body>\n    <p style='color: green'>#{
+
+
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((flash[:notice]
+));}</p>\n    <p style='color: red'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((flash[:alert]
+));}</p>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false((yield
+));}\n  </body>\n</html>\n", -2, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/obsidian/rls/pim/app/views/layouts/application.html.haml:17:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:352:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/obsidian/.gem/ruby/1.8/gems/devise-1.0.8/lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+/home/obsidian/.gem/ruby/1.8/gems/devise-1.0.8/app/controllers/sessions_controller.rb:14:in `new'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:35:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/obsidian/rls/pim/app/views/layouts/application.html.haml:5: syntax error, unexpected tIVAR, expecting ')') on line #5 of app/views/layouts/application.html.haml:
+2: %html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+3:   %head
+4:     %meta(http-equiv="content-type" content="text/html;charset=UTF-8")
+5:       %title= "PIM -"  @page_title
+6:     = stylesheet_link_tag 'scaffold'
+7: 
+8:   %body
+
+    app/views/layouts/application.html.haml:17:in `compile!'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 17:02:21) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 45ms (View: 23, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 17:03:36) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+Completed in 29ms (View: 16, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 17:07:18) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.9ms)
+Completed in 125ms (View: 111, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 17:07:23) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+Completed in 30ms (View: 16, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 17:16:48) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (1.3ms)
+Completed in 30ms (View: 16, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 17:19:32) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+
+ActionView::TemplateError (Illegal element: classes and ids must have values.) on line #9 of app/views/sessions/new.html.haml:
+6:     %h6
+7:       Welcome to
+8:       %strong tmi
+9:       .  Please enter your credentials.
+10:     .inputGroup
+11:       %p= f.label :email
+12:       %p= f.text_field :email
+
+    app/views/sessions/new.html.haml:9
+    haml (3.0.13) lib/haml/precompiler.rb:706:in `render_tag'
+    haml (3.0.13) lib/haml/precompiler.rb:837:in `render_div'
+    haml (3.0.13) lib/haml/precompiler.rb:210:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 17:21:12) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 33ms (View: 18, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-28 17:25:47) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (0.6ms)
+Completed in 32ms (View: 17, DB: 0) | 200 OK [http://localhost/users/login?unauthenticated=true]

@@ -1,0 +1,53 @@
+fieldset{
+    border:1px solid #ccc;
+    margin:1em;
+    padding:1em;
+}
+
+legend{
+    font-size:10pt;
+    padding:.5em 1em;
+    border:1px solid #ccc;    
+}
+.inputGroup{
+    float:left;
+    display:block;
+    width:100%;
+    clear:both;
+    margin:1em;
+}
+.inputGroup label{
+    font-size:.7em;
+    display:block;
+    margin-bottom:.25em;
+}
+.inputGroup input{
+    float:left;
+    padding:.5em;    
+}
+.inputGroup select{
+    float:left;
+    padding:.25em;
+    margin:0 .25em;
+}
+.submit{
+    width:100px;    
+    float:right;
+    padding:.5em;
+    clear:both;
+}
+
+#login{
+    font-family:Tahoma, sans-serif;
+    margin:10% auto;
+    width:50%;
+}
+#login h6{
+    font-weight:normal;
+    color:#aaa;
+    text-align:center;
+}
+#login h6 strong{
+    font-size:2em;
+    color:#a3b577;
+}
