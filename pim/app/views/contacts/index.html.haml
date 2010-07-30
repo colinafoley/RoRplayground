@@ -1,0 +1,29 @@
+- title "Contacts"
+- sidebar_msg "These are your contacts.  Click on a contact to view, edit, or delete the contact."
+
+= render :partial => "shared/logo"
+= render :partial => "shared/menu"
+
+#page
+  = render :partial => "shared/sidebar"
+
+  #content
+    %h2 Your Contact List
+    %table(cellspacing="0" cellpadding="1" class="listable")
+      %tr
+        %th Name
+        %th Phone
+        %th E-mail
+    -#
+      <% @contacts.each do |contact| %>
+      <tr>
+      <td><%=h contact.c_fname %></td>
+      <td><%=h contact.c_mname %></td>
+      <td><%=h contact.c_lname %></td>
+      <td><%=h contact.user %></td>
+      <td><%= link_to 'Show', contact %></td>
+      <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
+      <td><%= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+      <% end %>
+= render :partial => "shared/timeline"

@@ -15,9 +15,19 @@
     %p
       %em The Management
       
-      %h3 Today's Remaining Tasks
-      %table
+    %h3 Today's Remaining Tasks
+    %table(cellspacing="0" cellpadding="1" class="listable")
+      %tr
+        %th Task
+        %th Priority
+        %th Deadline
+          
 
-      %h3 Today's Remaining Appointments
-      %table
-    
+    %h3 Today's Remaining Appointments
+    %table(cellspacing="0" cellpading="1" class="listable")
+      %tr
+        %th Name
+        %th Begin
+        %th End
+
+= render :partial => "shared/timeline"
