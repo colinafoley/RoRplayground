@@ -11,4 +11,8 @@ module ApplicationHelper
   def sidebar_msg(sidebar_msg)
     content_for(:sidebar_msg) { "<p>" + sidebar_msg +"</p>" }
   end
+
+  def sidebar_lnks(sidebar_lnks)
+    content_for(:sidebar_lnks) { sidebar_lnks }
+  end
 end

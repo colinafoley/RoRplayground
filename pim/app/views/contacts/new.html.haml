@@ -1,0 +1,29 @@
+- title "Add Contact"
+- sidebar_msg "Go on now, add your contact!"
+
+= render :partial => "shared/logo"
+= render :partial => "shared/menu"
+
+#page
+  = render :partial => "shared/sidebar"
+  #content
+    %h2 Add Contact
+
+    - form_for(@contact) do |f|
+      - f.error_messages
+
+      %p
+        = f.label :c_fname
+        = f.text_field :c_fname
+      %p
+        = f.label :c_mname
+        = f.text_field :c_mname
+      %p
+        = f.label :c_lname
+        = f.text_field :c_lname
+
+      -# <%= f.label :user %><br />
+        <%= f.text_field :user %>
+      %input(id="current_user_user_id" name="current_user_user_id" type="hidden" value="#{current_user.id}")
+      %p
+        = f.submit 'Create'

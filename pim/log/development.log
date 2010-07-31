@@ -6033,3 +6033,1507 @@ Processing TasksController#index (for 127.0.0.1 at 2010-07-30 17:03:10) [GET]
 Rendering template within layouts/tasks
 Rendering tasks/index
 Completed in 120ms (View: 1, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-07-30 17:07:38) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Rendered shared/_logo (4.3ms)
+Rendered shared/_menu (0.6ms)
+Rendered shared/_sidebar (0.1ms)
+Rendered shared/_timeline (0.1ms)
+Completed in 29ms (View: 9, DB: 1) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-07-30 17:13:10) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Rendered shared/_logo (3.1ms)
+Rendered shared/_menu (0.6ms)
+Rendered shared/_sidebar (1.4ms)
+Rendered shared/_timeline (0.1ms)
+Completed in 124ms (View: 103, DB: 1) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:13:14) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 67ms (View: 45, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:13:53) [GET]
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 136ms (View: 17, DB: 2) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:15:59) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+
+ActionView::TemplateError (Illegal nesting: nesting within plain text is illegal.) on line #12 of app/views/contacts/new.html.haml:
+9: <h1>New contact</h1>
+10: 
+11: <% form_for(@contact) do |f| %>
+12:   <%= f.error_messages %>
+13: 
+14:   <p>
+15:     <%= f.label :c_fname %><br />
+
+    app/views/contacts/new.html.haml:12
+    haml (3.0.13) lib/haml/precompiler.rb:355:in `push_plain'
+    haml (3.0.13) lib/haml/precompiler.rb:279:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (267.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:18:04) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+
+ActionView::TemplateError (Illegal nesting: nesting within plain text is illegal.) on line #12 of app/views/contacts/new.html.haml:
+9: <h1>New contact</h1>
+10: 
+11: <% form_for(@contact) do |f| %>
+12:   <%= f.error_messages %>
+13: 
+14:   <p>
+15:     <%= f.label :c_fname %><br />
+
+    app/views/contacts/new.html.haml:12
+    haml (3.0.13) lib/haml/precompiler.rb:355:in `push_plain'
+    haml (3.0.13) lib/haml/precompiler.rb:279:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:18:08) [GET]
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+
+ActionView::TemplateError (Illegal nesting: nesting within plain text is illegal.) on line #29 of app/views/contacts/new.html.haml:
+26:     <%= f.text_field :user %>
+27:   </p>
+28:   <p>
+29:     <%= f.submit 'Create' %>
+30:   </p>
+31: <% end %>
+32: 
+
+    app/views/contacts/new.html.haml:29
+    haml (3.0.13) lib/haml/precompiler.rb:355:in `push_plain'
+    haml (3.0.13) lib/haml/precompiler.rb:279:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:21:40) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+
+ActionView::TemplateError (Inconsistent indentation: 3 spaces were used for indentation, but the rest of the document was indented using 2 spaces.) on line #25 of app/views/contacts/new.html.haml:
+22:     = f.label :c_lname
+23:     = f.text_field :c_lname
+24: 
+25:    -# <%= f.label :user %><br />
+26:      <%= f.text_field :user %>
+27:    = hidden_field(:current_user, :id)
+28:   %p
+
+    app/views/contacts/new.html.haml:25
+    haml (3.0.13) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.13) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.13) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.13) lib/haml/precompiler.rb:1040:in `block_opened?'
+    haml (3.0.13) lib/haml/precompiler.rb:388:in `push_script'
+    haml (3.0.13) lib/haml/precompiler.rb:224:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:21:52) [GET]
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+
+ActionView::TemplateError (Inconsistent indentation: 3 spaces were used for indentation, but the rest of the document was indented using 2 spaces.) on line #27 of app/views/contacts/new.html.haml:
+24: 
+25:   -# <%= f.label :user %><br />
+26:     <%= f.text_field :user %>
+27:    = hidden_field(:current_user, :id)
+28:   %p
+29:     = f.submit 'Create'
+30: 
+
+    app/views/contacts/new.html.haml:27
+    haml (3.0.13) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.13) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.13) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.13) lib/haml/precompiler.rb:180:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:22:08) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+ERROR: compiling _run_haml_app47views47contacts47new46html46haml RAISED compile error
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:13: syntax error, unexpected ')'
+));}\n  #{_hamlout.format_scrip...
+ ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:14: syntax error, unexpected $undefined
+));}\n  <p>\n    #{
+            ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:17: syntax error, unexpected '}', expecting kEND
+));}\n    #{_hamlout.format_script...
+    ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:21: unknown regexp option - p
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:21: syntax error, unexpected $undefined
+));}\n  </p>\n  <p>\n    #{
+             ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:21: syntax error, unexpected $undefined
+));}\n  </p>\n  <p>\n    #{
+                    ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:23: syntax error, unexpected '}', expecting kEND
+));}\n    #{_hamlout.format_script...
+    ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:30: unknown regexp option - p
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:30: syntax error, unexpected $undefined
+));}\n  </p>\n</div>\n#{
+             ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:30: unterminated string meets end of file
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:30: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+Function body:           def _run_haml_app47views47contacts47new46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :format=>:xhtml, :ugly=>false, :preserve=>["textarea", "pre", "code"], :escape_html=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;; title "Add Contact";
+ sidebar_msg "Go on now, add your contact!";
+_hamlout.push_text("#{
+_hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/head"
+));}\n#{_hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/menu"
+));}\n<div id='page'>\n  #{
+
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/sidebar"
+));}\n  <h6>Add Contact</h6>\n  #{
+
+
+_hamlout.format_script_false_false_false_false_false_true_false(( form_for(@contact) do |f|
+));}\n  #{_hamlout.format_script_false_false_false_false_false_true_false(( f.error_messages
+));}\n  <p>\n    #{
+
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( f.label :c_fname
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :c_fname
+));}\n  </p>\n  <p>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :c_mname
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :c_mname
+));}\n  </p>\n  <p>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :c_lname
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :c_lname
+));}\n  </p>\n  #{
+
+
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( hidden_field(:current_user, :id)
+));}\n  <p>\n    #{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( f.submit 'Create'
+));}\n  </p>\n</div>\n#{
+_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_false_false_true_false(( link_to 'Back', contacts_path
+));}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/obsidian/rls/pim/app/views/contacts/new.html.haml:30:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/obsidian/rls/pim/app/controllers/contacts_controller.rb:29:in `new'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:35:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:13: syntax error, unexpected ')'
+));}\n  #{_hamlout.format_scrip...
+ ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:14: syntax error, unexpected $undefined
+));}\n  <p>\n    #{
+            ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:17: syntax error, unexpected '}', expecting kEND
+));}\n    #{_hamlout.format_script...
+    ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:21: unknown regexp option - p
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:21: syntax error, unexpected $undefined
+));}\n  </p>\n  <p>\n    #{
+             ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:21: syntax error, unexpected $undefined
+));}\n  </p>\n  <p>\n    #{
+                    ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:23: syntax error, unexpected '}', expecting kEND
+));}\n    #{_hamlout.format_script...
+    ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:30: unknown regexp option - p
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:30: syntax error, unexpected $undefined
+));}\n  </p>\n</div>\n#{
+             ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:30: unterminated string meets end of file
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:30: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR) on line #13 of app/views/contacts/new.html.haml:
+10:   %h6 Add Contact
+11: 
+12:   = form_for(@contact) do |f|
+13:   = f.error_messages
+14: 
+15:   %p
+16:     = f.label :c_fname
+
+    app/views/contacts/new.html.haml:30:in `compile!'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:22:36) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+ERROR: compiling _run_haml_app47views47contacts47new46html46haml RAISED compile error
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:32: syntax error, unexpected kENSURE, expecting kEND
+...}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:35: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47contacts47new46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :format=>:xhtml, :ugly=>false, :preserve=>["textarea", "pre", "code"], :escape_html=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;; title "Add Contact";
+ sidebar_msg "Go on now, add your contact!";
+_hamlout.push_text("#{
+_hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/head"
+));}\n#{_hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/menu"
+));}\n<div id='page'>\n  #{
+
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/sidebar"
+));}\n  <h6>Add Contact</h6>\n", 0, false);
+
+
+ form_for(@contact) do |f|;
+ f.error_messages;
+_hamlout.push_text("  <p>\n    #{
+
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( f.label :c_fname
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :c_fname
+));}\n  </p>\n  <p>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :c_mname
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :c_mname
+));}\n  </p>\n  <p>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :c_lname
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :c_lname
+));}\n  </p>\n  #{
+
+
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( hidden_field(:current_user, :id)
+));}\n  <p>\n    #{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( f.submit 'Create'
+));}\n  </p>\n</div>\n#{
+_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_false_false_true_false(( link_to 'Back', contacts_path
+));}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/obsidian/rls/pim/app/views/contacts/new.html.haml:35:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/obsidian/rls/pim/app/controllers/contacts_controller.rb:29:in `new'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:35:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:32: syntax error, unexpected kENSURE, expecting kEND
+...}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:35: syntax error, unexpected $end, expecting kEND) on line #32 of app/views/contacts/new.html.haml:
+29:     = f.submit 'Create'
+30: 
+31: = link_to 'Back', contacts_path
+
+    app/views/contacts/new.html.haml:35:in `compile!'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:22:46) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+ERROR: compiling _run_haml_app47views47contacts47new46html46haml RAISED compile error
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:32: syntax error, unexpected kENSURE, expecting kEND
+...}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:35: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47contacts47new46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :format=>:xhtml, :ugly=>false, :preserve=>["textarea", "pre", "code"], :escape_html=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;; title "Add Contact";
+ sidebar_msg "Go on now, add your contact!";
+_hamlout.push_text("#{
+_hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/head"
+));}\n#{_hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/menu"
+));}\n<div id='page'>\n  #{
+
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/sidebar"
+));}\n  <h6>Add Contact</h6>\n", 0, false);
+
+
+ form_for(@contact) do |f|;
+ f.error_messages;
+_hamlout.push_text("  <p>\n    #{
+
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( f.label :c_fname
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :c_fname
+));}\n  </p>\n  <p>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :c_mname
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :c_mname
+));}\n  </p>\n  <p>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :c_lname
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :c_lname
+));}\n  </p>\n  #{
+
+
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( hidden_field(:current_user, :id)
+));}\n  <p>\n    #{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( f.submit 'Create'
+));}\n  </p>\n</div>\n#{
+_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_false_false_true_false(( link_to 'Back', contacts_path
+));}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/obsidian/rls/pim/app/views/contacts/new.html.haml:35:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/obsidian/rls/pim/app/controllers/contacts_controller.rb:29:in `new'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:35:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:32: syntax error, unexpected kENSURE, expecting kEND
+...}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:35: syntax error, unexpected $end, expecting kEND) on line #32 of app/views/contacts/new.html.haml:
+29:     = f.submit 'Create'
+30: 
+31: = link_to 'Back', contacts_path
+
+    app/views/contacts/new.html.haml:35:in `compile!'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:22:57) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+ERROR: compiling _run_haml_app47views47contacts47new46html46haml RAISED compile error
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:32: syntax error, unexpected kENSURE, expecting kEND
+...}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:35: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47contacts47new46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :format=>:xhtml, :ugly=>false, :preserve=>["textarea", "pre", "code"], :escape_html=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;; title "Add Contact";
+ sidebar_msg "Go on now, add your contact!";
+_hamlout.push_text("#{
+_hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/head"
+));}\n#{_hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/menu"
+));}\n<div id='page'>\n  #{
+
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "shared/sidebar"
+));}\n  <h6>Add Contact</h6>\n", 0, false);
+
+
+ form_for(@contact) do |f|;
+ f.error_messages;
+_hamlout.push_text("  <p>\n    #{
+
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( f.label :c_fname
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :c_fname
+));}\n  </p>\n  <p>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :c_mname
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :c_mname
+));}\n  </p>\n  <p>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :c_lname
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :c_lname
+));}\n  </p>\n  #{
+
+
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( hidden_field(:current_user, :id)
+));}\n  <p>\n    #{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( f.submit 'Create'
+));}\n  </p>\n</div>\n#{
+_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_false_false_true_false(( link_to 'Back', contacts_path
+));}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/obsidian/rls/pim/app/views/contacts/new.html.haml:35:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/obsidian/rls/pim/app/controllers/contacts_controller.rb:29:in `new'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:35:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/home/obsidian/.gem/ruby/1.8/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/home/obsidian/.gem/ruby/1.8/gems/haml-3.0.13/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:32: syntax error, unexpected kENSURE, expecting kEND
+...}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/home/obsidian/rls/pim/app/views/contacts/new.html.haml:35: syntax error, unexpected $end, expecting kEND) on line #32 of app/views/contacts/new.html.haml:
+29:     = f.submit 'Create'
+30: 
+31: = link_to 'Back', contacts_path
+
+    app/views/contacts/new.html.haml:35:in `compile!'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (139.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:23:49) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+
+ActionView::TemplateError (Missing template shared/_head.erb in view path app/views:/home/obsidian/.gem/ruby/1.8/gems/devise-1.0.8/app/views) on line #4 of app/views/contacts/new.html.haml:
+1: - title "Add Contact"
+2: - sidebar_msg "Go on now, add your contact!"
+3: 
+4: = render :partial => "shared/head"
+5: = render :partial => "shared/menu"
+6: 
+7: #page
+
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.13) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/contacts/new.html.haml:4:in `_run_haml_app47views47contacts47new46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (147.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:24:04) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+
+ActionView::TemplateError (Missing template shared/_header.erb in view path app/views:/home/obsidian/.gem/ruby/1.8/gems/devise-1.0.8/app/views) on line #4 of app/views/contacts/new.html.haml:
+1: - title "Add Contact"
+2: - sidebar_msg "Go on now, add your contact!"
+3: 
+4: = render :partial => "shared/header"
+5: = render :partial => "shared/menu"
+6: 
+7: #page
+
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.13) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/contacts/new.html.haml:4:in `_run_haml_app47views47contacts47new46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (143.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:24:18) [GET]
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+
+ActionView::TemplateError (Missing template shared/_head.erb in view path app/views:/home/obsidian/.gem/ruby/1.8/gems/devise-1.0.8/app/views) on line #4 of app/views/contacts/new.html.haml:
+1: - title "Add Contact"
+2: - sidebar_msg "Go on now, add your contact!"
+3: 
+4: = render :partial => "shared/head"
+5: = render :partial => "shared/menu"
+6: 
+7: #page
+
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.13) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/contacts/new.html.haml:4:in `_run_haml_app47views47contacts47new46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (148.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:24:56) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered shared/_logo (3.1ms)
+Rendered shared/_menu (1.7ms)
+Rendered shared/_sidebar (0.2ms)
+Completed in 46ms (View: 23, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:25:32) [GET]
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered shared/_logo (3.1ms)
+Rendered shared/_menu (0.6ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 49ms (View: 21, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:25:46) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered shared/_logo (3.0ms)
+Rendered shared/_menu (0.6ms)
+Rendered shared/_sidebar (0.2ms)
+Completed in 46ms (View: 25, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:26:43) [GET]
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered shared/_logo (3.1ms)
+Rendered shared/_menu (0.6ms)
+Rendered shared/_sidebar (0.2ms)
+Completed in 51ms (View: 26, DB: 2) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:30:13) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered shared/_logo (3.2ms)
+Rendered shared/_menu (0.6ms)
+Rendered shared/_sidebar (0.2ms)
+Completed in 133ms (View: 25, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2010-07-30 17:30:34) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pNq1JAFZ6zhwghUq543PpJERzF2AJ/mBkcZrVJUDBwQ=", "contact"=>{"c_fname"=>"Rebecca", "c_mname"=>"May", "c_lname"=>"Foley"}, "current_user"=>{"user_id"=>""}}
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mContact Create (0.3ms)[0m   [0;1mINSERT INTO "contacts" ("c_fname", "created_at", "updated_at", "c_mname", "user_id", "c_lname") VALUES('Rebecca', '2010-07-30 21:30:34', '2010-07-30 21:30:34', 'May', NULL, 'Foley')[0m
+Redirected to http://localhost:3000/contacts/1
+Completed in 29ms (DB: 1) | 302 Found [http://localhost/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-07-30 17:30:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.5ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 123ms (View: 9, DB: 1) | 200 OK [http://localhost/contacts/1]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-07-30 17:30:38) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.4ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Rendered shared/_logo (3.1ms)
+Rendered shared/_menu (4.5ms)
+Rendered shared/_sidebar (0.2ms)
+Rendered shared/_timeline (0.1ms)
+Completed in 51ms (View: 12, DB: 1) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-07-30 17:30:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 115ms (View: 7, DB: 1) | 200 OK [http://localhost/contacts/1]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2010-07-30 17:31:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.4ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Completed in 38ms (View: 15, DB: 1) | 200 OK [http://localhost/contacts/1/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2010-07-30 17:31:36) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"pNq1JAFZ6zhwghUq543PpJERzF2AJ/mBkcZrVJUDBwQ=", "contact"=>{"c_fname"=>"Rebecca", "c_mname"=>"May", "user"=>"1", "c_lname"=>"Foley"}, "id"=>"1"}
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 1) [0m
+
+ActiveRecord::AssociationTypeMismatch (User(#69830231702440) expected, got String(#69830276944900)):
+  app/controllers/contacts_controller.rb:62
+  app/controllers/contacts_controller.rb:61:in `update'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (130.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2010-07-30 17:32:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined method `integer_field' for #<ActionView::Helpers::FormBuilder:0x7f053c4eb888>) on line #20 of app/views/contacts/edit.html.erb:
+17:   </p>
+18:   <p>
+19:     <%= f.label :user %><br />
+20:     <%= f.integer_field :user %>
+21:   </p>
+22:   <p>
+23:     <%= f.submit 'Update' %>
+
+    app/views/contacts/edit.html.erb:20
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:231:in `form_for'
+    app/views/contacts/edit.html.erb:3
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (248.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2010-07-30 17:32:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Completed in 38ms (View: 16, DB: 1) | 200 OK [http://localhost/contacts/1/edit]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-07-30 17:32:43) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Rendered shared/_logo (3.2ms)
+Rendered shared/_menu (0.6ms)
+Rendered shared/_sidebar (0.1ms)
+Rendered shared/_timeline (0.1ms)
+Completed in 32ms (View: 8, DB: 1) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-07-30 17:32:59) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Rendered shared/_logo (3.1ms)
+Rendered shared/_menu (0.5ms)
+Rendered shared/_sidebar (0.1ms)
+Rendered shared/_timeline (0.1ms)
+Completed in 28ms (View: 7, DB: 1) | 200 OK [http://localhost/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:33:00) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered shared/_logo (4.7ms)
+Rendered shared/_menu (0.6ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 134ms (View: 20, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:37:04) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+
+ActionView::TemplateError (Invalid attribute list: "(id=\"current_user_user_id\" name=\"current_user_user_id\" type=\"hidden\" value=\#{current_user.user_id})".) on line #27 of app/views/contacts/new.html.haml:
+24: 
+25:       -# <%= f.label :user %><br />
+26:         <%= f.text_field :user %>
+27:       %input(id="current_user_user_id" name="current_user_user_id" type="hidden" value=#{current_user.user_id})
+28:       %p
+29:         = f.submit 'Create'
+
+    app/views/contacts/new.html.haml:27
+    haml (3.0.13) lib/haml/precompiler.rb:643:in `parse_new_attributes'
+    haml (3.0.13) lib/haml/precompiler.rb:637:in `loop'
+    haml (3.0.13) lib/haml/precompiler.rb:637:in `parse_new_attributes'
+    haml (3.0.13) lib/haml/precompiler.rb:588:in `parse_tag'
+    haml (3.0.13) lib/haml/precompiler.rb:704:in `render_tag'
+    haml (3.0.13) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.13) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.13) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.13) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (143.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:37:37) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered shared/_logo (5.1ms)
+Rendered shared/_menu (0.6ms)
+Rendered shared/_sidebar (0.1ms)
+
+ActionView::TemplateError (undefined method `user_id' for #<User:0x7f053c5aa378>) on line #27 of app/views/contacts/new.html.haml:
+24: 
+25:       -# <%= f.label :user %><br />
+26:         <%= f.text_field :user %>
+27:       %input(id="current_user_user_id" name="current_user_user_id" type="hidden" value="#{current_user.user_id}")
+28:       %p
+29:         = f.submit 'Create'
+
+    app/views/contacts/new.html.haml:27
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:225:in `call'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:225
+    haml (3.0.13) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.13) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:231:in `form_for'
+    app/views/contacts/new.html.haml:12:in `_run_haml_app47views47contacts47new46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (149.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:37:38) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered shared/_logo (4.3ms)
+Rendered shared/_menu (0.6ms)
+Rendered shared/_sidebar (0.1ms)
+
+ActionView::TemplateError (undefined method `user_id' for #<User:0x7f053c53a0f0>) on line #27 of app/views/contacts/new.html.haml:
+24: 
+25:       -# <%= f.label :user %><br />
+26:         <%= f.text_field :user %>
+27:       %input(id="current_user_user_id" name="current_user_user_id" type="hidden" value="#{current_user.user_id}")
+28:       %p
+29:         = f.submit 'Create'
+
+    app/views/contacts/new.html.haml:27
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:225:in `call'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:225
+    haml (3.0.13) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.13) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:231:in `form_for'
+    app/views/contacts/new.html.haml:12:in `_run_haml_app47views47contacts47new46html46haml'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.13) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/contacts_controller.rb:29:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.13) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (146.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 17:37:45) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered shared/_logo (5.4ms)
+Rendered shared/_menu (0.6ms)
+Rendered shared/_sidebar (0.1ms)
+Completed in 48ms (View: 26, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-07-30 20:43:11) [GET]
+  [4;35;1mUser Load (4.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered shared/_logo (3.1ms)
+Rendered shared/_menu (1.4ms)
+Rendered shared/_sidebar (0.2ms)
+Completed in 246ms (View: 184, DB: 4) | 200 OK [http://localhost/contacts/new]
