@@ -2,7 +2,7 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.xml
   def index
-    @contacts = Contact.all
+    @contacts = Contact.all(:conditions => ["user_id = :user_id", { :user_id => current_user.id }])
 
     respond_to do |format|
       format.html # index.html.erb

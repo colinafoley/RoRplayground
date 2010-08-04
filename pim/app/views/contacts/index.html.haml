@@ -1,6 +1,8 @@
 - title "Contacts"
 - sidebar_msg "These are your contacts.  Click on a contact to view, edit, or delete the contact."
-- sidebar_lnks link_to "Add contact", new_contact_path
+- content_for :sidebar_lnks do
+  %ul
+    %li= link_to "Add contact", new_contact_path
 
 = render :partial => "shared/logo"
 = render :partial => "shared/menu"
@@ -15,16 +17,12 @@
         %th Name
         %th Phone
         %th E-mail
-    -#
-      <% @contacts.each do |contact| %>
-      <tr>
-      <td><%=h contact.c_fname %></td>
-      <td><%=h contact.c_mname %></td>
-      <td><%=h contact.c_lname %></td>
-      <td><%=h contact.user %></td>
-      <td><%= link_to 'Show', contact %></td>
-      <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-      <td><%= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete %></td>
-      </tr>
-      <% end %>
+      - @contacts.each do |contact|
+        %tr
+          %td= h contact.c_fname + " " +  contact.c_mname + " " + contact.c_lname
+          %td= h contact.user_id 
+          %td= link_to 'Show', contact
+          %td= link_to 'Edit', edit_contact_path(contact) 
+          %td= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete
+
 = render :partial => "shared/timeline"

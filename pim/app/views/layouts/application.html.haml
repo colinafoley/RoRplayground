@@ -3,12 +3,13 @@
   %head
     %meta(http-equiv="content-type" content="text/html;charset=UTF-8")
       %title PIM - #{yield(:title) || "Too Much Information"}
-    = stylesheet_link_tag(yield(:stylesheet) || "application")
+    = stylesheet_link_tag("application")
+    = stylesheet_link_tag("forms")
 
   %body
 
-    %p(style="color: green")=flash[:notice]
-    %p(style="color: red")=flash[:alert]
+    %p(style="color: green")=notice
+    %p(style="color: red")=alert
 
     =yield
 
