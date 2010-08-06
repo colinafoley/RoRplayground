@@ -18,12 +18,14 @@ legend{
 }
 .inputGroup label{
     font-size:.7em;
-    display:block;
+    display: block;
+    width: 60px;
     margin-bottom:.25em;
+    float: left;
 }
 .inputGroup input{
-    float:left;
     padding:.5em;    
+    float:left;
 }
 .inputGroup select{
     float:left;

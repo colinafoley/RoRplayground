@@ -1,0 +1,20 @@
+- title "Show Contact"
+- sidebar_msg "Check out all this sweet contact detail!  You can edit or delete the contact information."
+- content_for :sidebar_lnks do
+  %ul
+    %li= link_to "Edit contact", edit_contact_path
+    %li= link_to "Destroy contact", @contact, :confirm => 'Are you sure?', :method => :delete
+    %li= link_to "Back", contacts_path
+
+= render :partial => "shared/logo"
+= render :partial => "shared/menu"
+
+#page
+  = render :partial => "shared/sidebar"
+
+  #content
+    %h2
+      = h @contact.c_fname
+      = h @contact.c_mname 
+      = h @contact.c_lname
+= render :partial => "shared/timeline"

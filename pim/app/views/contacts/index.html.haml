@@ -12,17 +12,11 @@
 
   #content
     %h2 Your Contact List
-    %table(cellspacing="0" cellpadding="1" class="listable")
+    %table.listable(cellspacing="0" cellpadding="1")
       %tr
         %th Name
-        %th Phone
-        %th E-mail
       - @contacts.each do |contact|
         %tr
-          %td= h contact.c_fname + " " +  contact.c_mname + " " + contact.c_lname
-          %td= h contact.user_id 
-          %td= link_to 'Show', contact
-          %td= link_to 'Edit', edit_contact_path(contact) 
-          %td= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete
+          %td= link_to "#{h(contact.c_fname) +' ' + h(contact.c_mname) + ' ' + h(contact.c_lname)}", contact
 
 = render :partial => "shared/timeline"

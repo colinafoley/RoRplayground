@@ -1,0 +1,30 @@
+- title "Edit Contact"
+- sidebar_msg "Go go gadget: Edit!"
+- content_for (:sidebar_lnks) do
+  %ul
+    %li= link_to "View Contact", @contact
+    %li= link_to "Back", contacts_path
+
+= render :partial => "shared/logo"
+= render :partial => "shared/menu"
+
+#page
+  = render :partial => "shared/sidebar"
+  #content
+    %h2 Edit Contact
+    - form_for(@contact) do |f|
+      = f.error_messages
+    
+      .inputGroup
+        = f.label :First
+        = f.text_field :c_fname
+      .inputGroup
+        = f.label :Middle
+        = f.text_field :c_mname
+      .inputGroup
+        = f.label :Last
+        = f.text_field :c_lname
+
+      = f.submit 'Update'
+
+  = render :partial => "shared/timeline"

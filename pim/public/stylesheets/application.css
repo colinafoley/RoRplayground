@@ -150,7 +150,7 @@ body{
 }
 
 .listable{
-    width:100%;
+    width:25%;
     border-collapse:collapse;
     border:1px solid #809eae;
     margin:1em;
@@ -169,12 +169,13 @@ body{
     color:#fff;
     padding:.5em 1em;
 }
-.listable tr{
+.listable tr:nth-child(even){
     background:#f0f0f0f0;
     font-size:.8em;
 }
-.listable tr.odd{
+.listable tr:nth-child(odd){
     background:#efefef;
+    font-size:.8em
 }
 
 .listable a{
