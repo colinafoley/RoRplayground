@@ -1,0 +1,32 @@
+- title "Add Task"
+- sidebar_msg "Add that task.  doit.  Keep track of the stuff you need to do.  doit."
+- content_for (:sidebar_lnks) do
+  %ul
+    %li= link_to "Back", tasks_path
+
+= render :partial => "shared/logo"
+= render :partial => "shared/menu"
+
+#page
+  = render :partial => "shared/sidebar"
+
+  #content
+    #fieldset
+      #legend Add Task
+      - form_for(@task) do |f|
+        = f.error_messages
+        .inputGroup
+          = f.label :name
+          = f.text_field :name
+        .inputGroup
+          = f.label :description
+          = f.text_area :description
+        .inputGroup
+          = f.label :deadline
+          = f.datetime_select :deadline
+        .inputGroup
+          = f.label :priority
+          = f.text_field :priority
+        %input#task_user(name="task[user_id]" type="hidden" value="#{current_user.id}")
+
+        = f.submit 'Create'

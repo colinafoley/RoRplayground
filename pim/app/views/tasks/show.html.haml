@@ -1,0 +1,21 @@
+- title "View Task"
+- sidebar_msg "Make any changes you like!"
+- content_for (:sidebar_lnks) do
+  %ul
+    %li= link_to "Edit Task", edit_task_path(@task)
+    %li= link_to "Destroy Task", @task, :confirm => 'Are you sure?', :method => :delete
+    %li= link_to "Back", tasks_path
+
+= render :partial => "shared/logo"
+= render :partial => "shared/menu"
+#page
+  = render :partial => "shared/sidebar"
+  #content
+    %h2= h @task.name
+    %p
+      Description: #{h @task.description}
+    %p
+      Deadline: #{h @task.deadline}
+    %p
+      Priority: #{h @task.priority}
+  = render :partial => "shared/timeline"

@@ -2,7 +2,7 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.xml
   def index
-    @tasks = Task.all
+    @tasks = Task.all(:conditions => ["user_id = :user_id", { :user_id => current_user.id }])
 
     respond_to do |format|
       format.html # index.html.erb

@@ -1,0 +1,27 @@
+- title "Task List"
+- sidebar_msg "Here you can find all of your tasks.  Click on a task to see its details.  Use the link below to add a task.  Look sharp."
+- content_for(:sidebar_lnks) do
+  %ul
+    %li= link_to "Add Task", new_task_path
+
+= render :partial => "shared/logo"
+= render :partial => "shared/menu"
+
+#page
+  = render :partial => "shared/sidebar"
+  #content
+    %h2 Your Task List
+
+    %table.listable(cellspacing="0" cellpadding="1")
+      %tr
+        %th Name
+        %th Deadline
+        %th Priority
+
+      - @tasks.each do |task|
+        %tr
+          %td= link_to "#{h(task.name)}", task
+          %td= h task.deadline
+          %td= h task.priority
+
+  = render :partial => "shared/timeline"

@@ -1,0 +1,31 @@
+- title "Edit Task"
+- sidebar_msg "Change that task infoz!"
+- content_for (:sidebard_lnks) do
+  %ul
+    %li link_to "View Task", task
+    %li link_to "Back", tasks_path
+
+= render :partial => "shared/logo"
+= render :partial => "shared/menu"
+
+#page
+  = render :partial => "shared/sidebar"
+  #content
+    #fieldset
+      #legend Edit Task
+      - form_for(@task) do |f|
+        = f.error_messages
+        .inputGroup
+          = f.label :name
+          = f.text_field :name
+        .inputGroup
+          = f.label :description
+          = f.text_area :description
+        .inputGroup
+          = f.label :deadline
+          = f.datetime_select :deadline
+        .inputGroup
+          = f.label :priority
+          = f.text_field :priority
+        = f.submit 'Update'
+  = render :partial => "shared/timeline"
